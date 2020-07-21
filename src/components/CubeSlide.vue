@@ -36,7 +36,7 @@ export default {
 
 <style>
 #gameContainer {
-  height: 700px;
+  height: 600px;
   display: flex;
   align-items: center;
 }
