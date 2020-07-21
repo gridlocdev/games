@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand>GridlocDev</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -17,17 +17,17 @@
       </b-collapse>
     </b-navbar>
     <router-view />
-    <div id="footer" style="width: 100%; margin: 5% 0% 0%; padding: 10% 0%;background-color:grey;">
+    <div id="footer">
       <b-container class="bv-example-row">
         <b-row>
           <b-col>
-            <b-link>thing</b-link>
+            <b-link href="https://vuejs.org/">VueJS</b-link>
           </b-col>
           <b-col>
-            <b-link>thing</b-link>
+            <b-link href="https://pages.github.com/">GitHub Pages</b-link>
           </b-col>
           <b-col>
-            <b-link>thing</b-link>
+            <b-link href="https://unity.com/">Unity Game Engine</b-link>
           </b-col>
         </b-row>
       </b-container>
@@ -53,6 +53,24 @@ export default {
 </script>
 
 <style>
+*:focus {
+  outline: none;
+}
+#footer {
+  width: 100%;
+  margin: 5% 0% 0%;
+  padding: 5% 0%;
+  background-color: grey;
+}
+
+#footer a {
+  color: white;
+  font-style: italic;
+}
+#footer a:hover {
+  color: rgba(256, 256, 256, 0.75);
+  transition: 0.2s;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
