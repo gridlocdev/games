@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand>GridlocDev</b-navbar-brand>
+    <b-navbar toggleable="lg" type="light" variant="light">
+      <b-navbar-brand>
+        <b-link :to="{ path: '/'}">GridlocDev</b-link>
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -56,19 +58,19 @@ export default {
 *:focus {
   outline: none;
 }
+
 #footer {
+  border-top: 1px solid lightgrey;
   width: 100%;
-  margin: 5% 0% 0%;
   padding: 5% 0%;
-  background-color: grey;
 }
 
 #footer a {
-  color: white;
+  color: rgba(0, 0, 0, 0.75);
   font-style: italic;
 }
 #footer a:hover {
-  color: rgba(256, 256, 256, 0.75);
+  color: rgba(0, 0, 0, 0.5);
   transition: 0.2s;
 }
 #app {
@@ -90,5 +92,21 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.navbar a {
+  color: rgba(0, 0, 0, 0.75);
+}
+.navbar a:hover {
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px,
+    rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
+}
+:not(.navbar-toggler)button:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px,
+    rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
 }
 </style>

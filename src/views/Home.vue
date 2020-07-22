@@ -70,25 +70,20 @@
   height: 100%;
   background-color: grey;"
                     >
-                      <router-link to="/CubeSlide">
-                        <b-card-img
-                          :src="require('../assets/Under-construction-white.26c32086.png')"
-                          alt="Image"
-                          class="rounded-0"
-                        ></b-card-img>
-                      </router-link>
+                      <b-card-img
+                        :src="require('../assets/Under-construction-white.26c32086.png')"
+                        alt="Image"
+                        class="rounded-0"
+                      ></b-card-img>
                     </div>
                   </b-col>
                   <b-col md="6">
                     <b-card-body>
                       <h4>
-                        <b-link :to="{ path: '/CubeSlide'}">Coming Soon...</b-link>
+                        <b>Coming Soon...</b>
                       </h4>
-                      <router-link to="/CubeSlide">
-                        <b-card-text
-                          class="nobold"
-                        >When I make a new game, it will be displayed here!</b-card-text>
-                      </router-link>
+                      <b-card-text class="nobold">When I make a new game, it will be displayed here!</b-card-text>
+
                       <!-- <b-button
                         class="button animate__animated animate__infinite animate__pulse"
                         variant="primary"
@@ -112,25 +107,19 @@
   height: 100%;
   background-color: grey;"
                     >
-                      <router-link to="/CubeSlide">
-                        <b-card-img
-                          :src="require('../assets/Under-construction-white.26c32086.png')"
-                          alt="Image"
-                          class="rounded-0"
-                        ></b-card-img>
-                      </router-link>
+                      <b-card-img
+                        :src="require('../assets/Under-construction-white.26c32086.png')"
+                        alt="Image"
+                        class="rounded-0"
+                      ></b-card-img>
                     </div>
                   </b-col>
                   <b-col md="6">
                     <b-card-body>
                       <h4>
-                        <b-link :to="{ path: '/CubeSlide'}">Coming Soon...</b-link>
+                        <b>Coming Soon...</b>
                       </h4>
-                      <router-link to="/CubeSlide">
-                        <b-card-text
-                          class="nobold"
-                        >When I make a new game, it will be displayed here!</b-card-text>
-                      </router-link>
+                      <b-card-text class="nobold">When I make a new game, it will be displayed here!</b-card-text>
                       <!-- <b-button
                         class="button animate__animated animate__infinite animate__pulse"
                         variant="primary"
@@ -156,6 +145,13 @@ export default {
 </script>
 
 <style scoped>
+#my-games {
+  margin: 5% 0%;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
 a {
   color: rgba(0, 0, 0, 0.75);
   font-weight: bold;
@@ -171,11 +167,20 @@ a .nobold {
 a .nobold:hover {
   color: rgba(0, 0, 0, 0.75);
 }
+
+.card:hover {
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px,
+    rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
+}
+
 .button {
   margin: 10%;
   color: white;
 }
-.button:hover {
+.button:hover, button:hover {
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px,
+    rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
 }
 </style>

@@ -19,7 +19,9 @@
               variant="primary"
               href="https://gridlocdev.github.io/cubeSlide/"
               style="width:100%;"
-            >Play</b-button>
+            >
+              <b>Play</b>
+            </b-button>
           </b-col>
         </b-row>
       </div>
