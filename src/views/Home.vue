@@ -158,6 +158,7 @@ a {
 }
 a:hover,
 a:active {
+  transition: 0.2s;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
@@ -178,7 +179,8 @@ a .nobold:hover {
   margin: 10%;
   color: white;
 }
-.button:hover, button:hover {
+.button:hover,
+button:hover {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px,
     rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
