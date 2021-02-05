@@ -13,6 +13,7 @@
           <b-nav-item-dropdown text="Projects" right>
             <b-dropdown-item :to="{ path: '/CubeSlide'}">CubeSlide</b-dropdown-item>
             <b-dropdown-item :to="{ path: '/TextAdventure'}">TextAdventure</b-dropdown-item>
+            <b-dropdown-item :to="{ path: '/DrumMachine'}">DrumMachine</b-dropdown-item>
             <b-dropdown-item disabled>Coming Soon...</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>

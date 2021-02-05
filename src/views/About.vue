@@ -8,22 +8,24 @@
               <b>About Me</b>
             </h4>
             <p>
-              I'm a software developer by trade, and I also create games when I
-              have some spare time.
+              I've been a software developer by trade since I graduated from
+              university in 2019, and I also create games when I have some spare
+              time.
             </p>
             <p>
-              I like long walks on the beach, and hanging with the bros on a
-              saturday night. I'm 6'2", and in general feel just as comfortable
-              as I do in jeans and a T-shirt as I do in a cocktail dress and
-              heels; which is not very.
+              The projects I've built to show here have been a great experience
+              to enhance my skills as a programmer and also to have something to
+              look back on years down the line.
             </p>
             <p>
-              If you didn't notice already, the dude in the picture is not me.
-              That would be sweet though.
+              Also, my favorite flavor of ice cream is cookie dough.
             </p>
           </b-col>
           <b-col sm="12" md="6" lg="6" xl="6">
-            <b-img fluid-grow :src="require('../assets/abs.jpg')"></b-img>
+            <b-img
+              fluid-grow
+              :src="require('../assets/aboutImage.jpg')"
+            ></b-img>
           </b-col>
         </b-row>
       </div>
