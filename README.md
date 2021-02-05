@@ -1,4 +1,4 @@
-# games-portfolio
+# portfolio
 
 ## Project setup
 ```

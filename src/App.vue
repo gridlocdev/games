@@ -10,7 +10,7 @@
         <b-navbar-nav>
           <b-nav-item :to="{ path: '/'}">Home</b-nav-item>
           <b-nav-item :to="{ path: '/About'}">About</b-nav-item>
-          <b-nav-item-dropdown text="Games" right>
+          <b-nav-item-dropdown text="Projects" right>
             <b-dropdown-item :to="{ path: '/CubeSlide'}">CubeSlide</b-dropdown-item>
             <b-dropdown-item disabled>Coming Soon...</b-dropdown-item>
             <b-dropdown-item disabled>Coming Soon...</b-dropdown-item>

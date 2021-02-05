@@ -3,18 +3,18 @@
     <div>
       <b-jumbotron>
         <h1 class="animate__animated animate__lightSpeedInLeft">GridlocDev</h1>
-        <p class="animate__animated animate__fadeIn animate__delay-1s">I like making games and stuff</p>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">I like making games and other stuff</p>
         <p
           class="animate__animated animate__fadeIn animate__delay-1s"
         >Check them out if they're cool</p>
         <b-button
           class="animate__animated animate__fadeIn animate__delay-1s"
           variant="primary"
-          v-scroll-to="{el:'#my-games', offset: -50}"
+          v-scroll-to="{el:'#my-projects', offset: -50}"
         >Get Started</b-button>
       </b-jumbotron>
     </div>
-    <div class="animate__animated animate__fadeIn animate__delay-1s" id="my-games">
+    <div class="animate__animated animate__fadeIn animate__delay-1s" id="my-projects">
       <b-container class="bv-example-row">
         <b-row>
           <b-col sm="12" md="12" lg="6" xl="4">
@@ -145,7 +145,7 @@ export default {
 </script>
 
 <style scoped>
-#my-games {
+#my-projects {
   margin: 5% 0%;
 }
 
