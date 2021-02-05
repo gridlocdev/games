@@ -127,9 +127,9 @@
                         height: 100%;
                       "
                     >
-                      <router-link to="/TextAdventure">
+                      <router-link to="/DrumMachine">
                         <b-card-img
-                          :src="require('../assets/TextAdventureImage.png')"
+                          :src="require('../assets/DrumMachineImage.png')"
                           alt="Image"
                           class="rounded-0"
                         ></b-card-img>
@@ -139,19 +139,20 @@
                   <b-col md="6">
                     <b-card-body>
                       <h4>
-                        <b-link :to="{ path: '/TextAdventure' }"
-                          >Text Adventure</b-link
+                        <b-link :to="{ path: '/DrumMachine' }"
+                          >Drum Machine</b-link
                         >
                       </h4>
-                      <router-link to="/TextAdventure">
+                      <router-link to="/DrumMachine">
                         <b-card-text class="nobold"
-                          >Play and create interactive stories.</b-card-text
+                          >Play a virtual drumkit using your
+                          keyboard.</b-card-text
                         >
                       </router-link>
                       <b-button
                         class="button animate__animated animate__infinite animate__pulse"
                         variant="primary"
-                        href="https://gridlocdev.github.io/textadventure/"
+                        href="https://gridlocdev.github.io/drummachine/"
                         >Play</b-button
                       >
                     </b-card-body>
@@ -189,7 +190,7 @@
                         <b>Coming Soon...</b>
                       </h4>
                       <b-card-text class="nobold"
-                        >When I make a new game, it will be displayed
+                        >When I make a new project, it will be displayed
                         here!</b-card-text
                       >
                       <!-- <b-button

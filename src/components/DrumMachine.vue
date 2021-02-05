@@ -6,18 +6,18 @@
           <b-col sm="12" md="7" lg="8" xl="8">
             <b-img
               fluid-grow
-              :src="require('../assets/textadventure.gif')"
+              :src="require('../assets/drummachine.gif')"
             ></b-img>
           </b-col>
           <b-col sm="12" md="5" lg="4" xl="4">
             <h4>
-              <b>Text Adventure</b>
+              <b>Drum Machine</b>
             </h4>
-            <p>Play, create, import or export a text adventure game story!</p>
+            <p>Play a virtual drumkit using your keyboard.</p>
             <b-button
               class="button animate__animated animate__infinite animate__pulse"
               variant="primary"
-              href="https://gridlocdev.github.io/cubeSlide/"
+              href="https://gridlocdev.github.io/drummachine/"
               style="width: 100%"
             >
               <b>Play</b>
