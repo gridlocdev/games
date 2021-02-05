@@ -2,18 +2,24 @@
   <div id="app">
     <b-navbar toggleable="lg" type="light" variant="light">
       <b-navbar-brand>
-        <b-link :to="{ path: '/'}">GridlocDev</b-link>
+        <b-link :to="{ path: '/' }">GridlocDev</b-link>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item :to="{ path: '/'}">Home</b-nav-item>
-          <b-nav-item :to="{ path: '/About'}">About</b-nav-item>
+          <b-nav-item :to="{ path: '/' }">Home</b-nav-item>
+          <b-nav-item :to="{ path: '/About' }">About</b-nav-item>
           <b-nav-item-dropdown text="Projects" right>
-            <b-dropdown-item :to="{ path: '/CubeSlide'}">CubeSlide</b-dropdown-item>
-            <b-dropdown-item :to="{ path: '/TextAdventure'}">TextAdventure</b-dropdown-item>
-            <b-dropdown-item :to="{ path: '/DrumMachine'}">DrumMachine</b-dropdown-item>
+            <b-dropdown-item :to="{ path: '/CubeSlide' }"
+              >CubeSlide</b-dropdown-item
+            >
+            <b-dropdown-item :to="{ path: '/TextAdventure' }"
+              >TextAdventure</b-dropdown-item
+            >
+            <b-dropdown-item :to="{ path: '/DrumMachine' }"
+              >DrumMachine</b-dropdown-item
+            >
             <b-dropdown-item disabled>Coming Soon...</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
@@ -39,19 +45,10 @@
 </template>
 
 <script>
-import "bootstrap/dist/css/bootstrap.css";
-import Vue from "vue";
-import BootstrapVue from "bootstrap-vue";
-import ScrollTo from "vue-scrollto";
-import Animation from "animate.css";
-
-Vue.use(BootstrapVue);
-Vue.use(ScrollTo);
-Vue.use(Animation);
 
 export default {
   name: "Home",
-  components: {}
+  components: {},
 };
 </script>
 
