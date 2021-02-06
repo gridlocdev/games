@@ -23,7 +23,14 @@
     >
       <b-container class="bv-example-row">
         <b-row>
-          <b-col sm="12" md="12" lg="6" xl="4">
+          <b-col
+            v-for="project in projects"
+            :key="project.id"
+            sm="12"
+            md="12"
+            lg="6"
+            xl="4"
+          >
             <div>
               <b-card no-body class="overflow-hidden" style="max-width: 540px">
                 <b-row no-gutters>
@@ -36,9 +43,11 @@
                         height: 100%;
                       "
                     >
-                      <router-link to="/CubeSlide">
+                      <router-link :to="project.links.previewPageRoute">
                         <b-card-img
-                          :src="require('../assets/CubeSlideImage.png')"
+                          :src="
+                            require('../assets/' + project.imageName + '.png')
+                          "
                           alt="Image"
                           class="rounded-0"
                         ></b-card-img>
@@ -48,111 +57,20 @@
                   <b-col md="6">
                     <b-card-body>
                       <h4>
-                        <b-link :to="{ path: '/CubeSlide' }">Cube Slide</b-link>
+                        <b-link
+                          :to="{ path: project.links.previewPageRoute }"
+                          >{{ project.title }}</b-link
+                        >
                       </h4>
-                      <router-link to="/CubeSlide">
-                        <b-card-text class="nobold"
-                          >Slide left and right to make your way to the
-                          goal.</b-card-text
+                      <router-link :to="project.links.previewPageRoute">
+                        <b-card-text class="nobold">
+                          {{ project.description }}</b-card-text
                         >
                       </router-link>
                       <b-button
                         class="button animate__animated animate__infinite animate__pulse"
                         variant="primary"
-                        href="https://gridlocdev.github.io/cubeSlide/"
-                        >Play</b-button
-                      >
-                    </b-card-body>
-                  </b-col>
-                </b-row>
-              </b-card>
-            </div>
-          </b-col>
-          <b-col sm="12" md="12" lg="6" xl="4">
-            <div>
-              <b-card no-body class="overflow-hidden" style="max-width: 540px">
-                <b-row no-gutters>
-                  <b-col md="6">
-                    <div
-                      style="
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%;
-                      "
-                    >
-                      <router-link to="/TextAdventure">
-                        <b-card-img
-                          :src="require('../assets/TextAdventureImage.png')"
-                          alt="Image"
-                          class="rounded-0"
-                        ></b-card-img>
-                      </router-link>
-                    </div>
-                  </b-col>
-                  <b-col md="6">
-                    <b-card-body>
-                      <h4>
-                        <b-link :to="{ path: '/TextAdventure' }"
-                          >Text Adventure</b-link
-                        >
-                      </h4>
-                      <router-link to="/TextAdventure">
-                        <b-card-text class="nobold"
-                          >Play and create interactive stories.</b-card-text
-                        >
-                      </router-link>
-                      <b-button
-                        class="button animate__animated animate__infinite animate__pulse"
-                        variant="primary"
-                        href="https://gridlocdev.github.io/textadventure/"
-                        >Play</b-button
-                      >
-                    </b-card-body>
-                  </b-col>
-                </b-row>
-              </b-card>
-            </div>
-          </b-col>
-          <b-col sm="12" md="12" lg="6" xl="4">
-            <div>
-              <b-card no-body class="overflow-hidden" style="max-width: 540px">
-                <b-row no-gutters>
-                  <b-col md="6">
-                    <div
-                      style="
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%;
-                      "
-                    >
-                      <router-link to="/DrumMachine">
-                        <b-card-img
-                          :src="require('../assets/DrumMachineImage.png')"
-                          alt="Image"
-                          class="rounded-0"
-                        ></b-card-img>
-                      </router-link>
-                    </div>
-                  </b-col>
-                  <b-col md="6">
-                    <b-card-body>
-                      <h4>
-                        <b-link :to="{ path: '/DrumMachine' }"
-                          >Drum Machine</b-link
-                        >
-                      </h4>
-                      <router-link to="/DrumMachine">
-                        <b-card-text class="nobold"
-                          >Play a virtual drumkit using your
-                          keyboard.</b-card-text
-                        >
-                      </router-link>
-                      <b-button
-                        class="button animate__animated animate__infinite animate__pulse"
-                        variant="primary"
-                        href="https://gridlocdev.github.io/drummachine/"
+                        :href="project.links.playURL"
                         >Play</b-button
                       >
                     </b-card-body>
@@ -193,11 +111,6 @@
                         >When I make a new project, it will be displayed
                         here!</b-card-text
                       >
-                      <!-- <b-button
-                        class="button animate__animated animate__infinite animate__pulse"
-                        variant="primary"
-                        href="https://gridlocdev.github.io/cubeSlide/"
-                      >Play</b-button>-->
                     </b-card-body>
                   </b-col>
                 </b-row>
@@ -214,6 +127,42 @@
 export default {
   name: "Home",
   components: {},
+  data: function () {
+    return {
+      projects: [
+        {
+          id: 0,
+          title: "Cube Slide",
+          description: "Slide left and right to make your way to the goal.",
+          imageName: "CubeSlideImage",
+          links: {
+            previewPageRoute: "/CubeSlide",
+            playURL: "https://gridlocdev.github.io/cubeSlide/",
+          },
+        },
+        {
+          id: 1,
+          title: "Text Adventure",
+          description: "Play and create interactive stories.",
+          imageName: "TextAdventureImage",
+          links: {
+            previewPageRoute: "/TextAdventure",
+            playURL: "https://gridlocdev.github.io/textadventure/",
+          },
+        },
+        {
+          id: 2,
+          title: "Drum Machine",
+          description: "Play a virtual drumkit using your keyboard.",
+          imageName: "DrumMachineImage",
+          links: {
+            previewPageRoute: "/DrumMachine",
+            playURL: "https://gridlocdev.github.io/drummachine/",
+          },
+        },
+      ],
+    };
+  },
 };
 </script>
 
