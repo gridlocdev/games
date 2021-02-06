@@ -1,0 +1,130 @@
+html {
+    background-color: rgb(24, 26, 27);
+  }
+  
+  .dropdown.show a span,
+  .dropdown.show a span::after {
+    color: rgba(232, 230, 227, 0.9) !important;
+  }
+  .dropdown-menu {
+    color: rgb(209, 205, 199);
+    background-color: rgb(24, 26, 27);
+    border-color: rgba(140, 130, 115, 0.15);
+  }
+  
+  .dropdown.show .dropdown-menu .dropdown-item {
+    color: rgb(209, 205, 199);
+    background-color: transparent;
+    border-color: initial;
+  }
+  .dropdown.show .dropdown-menu .dropdown-item:hover {
+    color: white !important;
+    background-color: rgb(35, 38, 39);
+  }
+  
+  #app {
+    background-color: rgb(24, 26, 27);
+    color: rgb(174, 194, 211) !important;
+  }
+  
+  nav .navbar-nav .nav-item a:not(.dropdown-item) {
+    color: rgba(232, 230, 227, 0.5) !important;
+  }
+  
+  nav .navbar-nav .nav-item a:hover {
+    color: rgba(232, 230, 227, 0.7) !important;
+  }
+  nav .navbar-brand a {
+    color: rgba(232, 230, 227, 0.75) !important;
+  }
+  
+  .navbar a {
+    color: rgba(232, 230, 227, 0.75);
+  }
+  .navbar a:hover {
+    color: rgba(232, 230, 227, 0.9) !important;
+  }
+
+  .bg-light {
+    background-color: rgb(27, 30, 31) !important;
+  }
+  
+  .card-body a:not(.btn) {
+    color: rgba(232, 230, 227, 0.75) !important;
+  }
+  .card-body a:hover {
+    color: rgba(232, 230, 227, 0.5) !important;
+  }
+  .card-text:hover {
+    color: rgba(232, 230, 227, 0.75) !important;
+  }
+  
+  .jumbotron {
+    background-color: rgb(35, 38, 39);
+  }
+  
+  .card {
+    background-color: rgb(24, 26, 27);
+    border-color: rgba(140, 130, 115, 0.13);
+  }
+  .card-body {
+    color: rgb(174, 194, 211);
+  }
+  
+  .btn-primary {
+    color: rgb(232, 230, 227);
+    background-color: rgb(0, 98, 204);
+    border-color: rgb(0, 86, 179);
+  }
+  .btn-primary:hover {
+    color: rgb(232, 230, 227);
+    background-color: rgb(0, 89, 185);
+    border-color: rgb(0, 86, 179);
+  }
+  
+  #footer {
+    border-top-color: rgb(60, 65, 68) !important;
+  }
+  
+  #footer a {
+    color: rgba(232, 230, 227, 0.75);
+    font-style: italic;
+  }
+  #footer a:hover {
+    color: rgba(232, 230, 227, 0.5);
+    transition: 0.2s;
+  }
+  
+  ::placeholder {
+    color: #b2aba1;
+  }
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+  }
+  ::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+  }
+  ::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+  }
+  ::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+  }

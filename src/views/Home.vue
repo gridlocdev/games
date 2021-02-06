@@ -90,7 +90,7 @@
                         justify-content: center;
                         align-items: center;
                         height: 100%;
-                        background-color: grey;
+                        background-color: #60686c;
                       "
                     >
                       <b-card-img

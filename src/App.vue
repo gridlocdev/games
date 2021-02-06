@@ -45,7 +45,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Home",
   components: {},
@@ -53,50 +52,45 @@ export default {
 </script>
 
 <style>
+/* Dark Mode */
+@import "./custom.css";
+
 *:focus {
   outline: none;
 }
 
 #footer {
-  border-top: 1px solid lightgrey;
   width: 100%;
   padding: 5% 0%;
+  border-top: 1px solid;
 }
 
-#footer a {
-  color: rgba(0, 0, 0, 0.75);
-  font-style: italic;
-}
-#footer a:hover {
-  color: rgba(0, 0, 0, 0.5);
-  transition: 0.2s;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
   padding: 30px;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-.navbar a {
-  color: rgba(0, 0, 0, 0.75);
-}
 .navbar a:hover {
   text-decoration: none;
+}
+
+.dropdown-menu {
+  list-style-image: initial;
+}
+
+.dropdown.show .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
+.dropdown.show .dropdown-menu .dropdown-item:hover {
+  text-decoration-color: initial;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 
 .button:hover {
