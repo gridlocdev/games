@@ -6,6 +6,7 @@ html {
   .dropdown.show a span::after {
     color: rgba(232, 230, 227, 0.9) !important;
   }
+  
   .dropdown-menu {
     color: rgb(209, 205, 199);
     background-color: rgb(24, 26, 27);
@@ -64,7 +65,7 @@ html {
   }
   
   .card {
-    background-color: rgb(24, 26, 27);
+    background-color: rgb(35, 38, 39);
     border-color: rgba(140, 130, 115, 0.13);
   }
   .card-body {

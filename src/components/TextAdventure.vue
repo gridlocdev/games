@@ -17,7 +17,7 @@
             <b-button
               class="button animate__animated animate__infinite animate__pulse"
               variant="primary"
-              href="https://gridlocdev.github.io/cubeSlide/"
+              href="https://gridlocdev.github.io/textadventure/"
               style="width: 100%"
             >
               <b>Play</b>
